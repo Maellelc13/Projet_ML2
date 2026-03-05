@@ -28,6 +28,7 @@ Ce projet s’articule autour de **trois notebooks principaux**, à exécuter da
      \(130×FN + 15×FP\) pour chaque modèle.
    - Sauvegarde les meilleurs modèles en pickle dans `Models/` et génère des
      soumissions Kaggle dans `Prédiction/`.
+   - **Note** : le dossier `Models/` est dans le `.gitignore` (il n’est pas versionné). Il est créé automatiquement à la première exécution du notebook. Pour que les cellules « comparaison » et « SHAP » fonctionnent, il faut avoir exécuté auparavant les cellules d’entraînement de chaque modèle (Régression logistique, KNN, Arbre, Random Forest, AdaBoost, Gradient Boosting, XGBoost).
    - Fournit les sections d’**interprétation** :
      - coefficients et odds ratios de la régression logistique,
      - graphes SHAP pour XGBoost,
